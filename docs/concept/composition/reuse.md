@@ -17,7 +17,7 @@ Dưới đây là một ví dụ nhỏ, `mixin` sau sẽ có thể thực hiện
 Component sau sẽ sử dụng `mixin` này nhằm alert user nội dung trong `message`.
 
 ::: code-group
-<<< @/demo/using-mixin/UsingMixin.vue
+<<< @/demo/using-mixin/App.vue
 :::
 
 <DemoBlock>
@@ -34,10 +34,10 @@ Mặc dù tiện lợi, nhưng `mixin` tiềm ẩn một số vấn đề sau:
 ### Dễ gây xung đột
 khi áp dụng `mixin` vào component, các option của `mixin` sẽ được merge vào component. Nếu component có tồn tại `data`, `computed`, ... có cùng tên thì chúng sẽ bị merge và dùng chung.
 
-Với ví dụ như bên trên, giả sử ở `UsingMixin.vue`, thêm `data.message` và thay đổi nội dung của tiêu đề thành <span v-pre>`{{message}}`</span>.
+Với ví dụ như bên trên, giả sử ở `App.vue`, thêm `data.message` và thay đổi nội dung của tiêu đề thành <span v-pre>`{{message}}`</span>.
 
 ::: code-group
-<<< @/demo/using-mixin-conflict/UsingMixinConflict.vue{4}
+<<< @/demo/using-mixin-conflict/App.vue{4}
 :::
 
 <DemoBlock>
@@ -62,7 +62,7 @@ Dưới đây sẽ là demo cho việc chuyển đổi qua sử dụng `composab
 
 ::: code-group
 <<< @/demo/using-composable/alert.js
-<<< @/demo/using-composable/UsingComposable.vue
+<<< @/demo/using-composable/App.vue
 :::
 
 <DemoBlock>
@@ -89,7 +89,7 @@ Do bản chất `composable` là một hàm nên có thể truyền tham số t�
 
 
 <script setup>
-import UsingMixin from "../../demo/using-mixin/UsingMixin.vue";
-import UsingMixinConflict from "../../demo/using-mixin-conflict/UsingMixinConflict.vue";
-import UsingComposable from "../../demo/using-composable/UsingComposable.vue";
+import {default as UsingMixin} from "../../demo/using-mixin/App.vue";
+import {default as UsingMixinConflict} from "../../demo/using-mixin-conflict/App.vue";
+import {default as UsingComposable} from "../../demo/using-composable/App.vue";
 </script>

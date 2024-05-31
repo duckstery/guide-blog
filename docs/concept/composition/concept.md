@@ -6,36 +6,25 @@ next:
 ---
 
 # Giới thiệu
-Phần này sẽ nói về một số lý thuyết, khái niệm về Composition API
+Phần này sẽ nói về một số lý thuyết, khái niệm về Composition API.
 
 ## Khái niệm về Composition API
 Composition API là một style API để sử dụng Vue. Trước đó, chỉ có duy nhất một API là Option API.
 
 Ví dụ về Option API
-```vue
-<script>
-  export default {
-    data() {
-      return {
-        count: 0
-      }
-    }
-  }
-</script>
 
-<template>
-  <button @click="count++">Count is: {{ count }}</button>
-</template>
+<<< @/demo/option-api-example/App.vue
 
-<style scoped>
-  button {
-    font-weight: bold;
-  }
-</style>
-```
+<DemoBlock>
+<OptionApiExample/>
+</DemoBlock>
 
 Theo như Vue, Composition API sinh ra để giải quyết một số bài toán như sau"
 * Cải tiến khá năng tái sử dụng
 * Cải tiến khả năng tổ chức code
 * Hỗ trợ type (Typescript)
 * Giảm thiếu dung lượng và chi phí của sản phẩm
+
+<script setup>
+import {default as OptionApiExample} from "../../demo/option-api-example/App.vue";
+</script>

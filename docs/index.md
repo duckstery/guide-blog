@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: Bắt đầu
-      link: /concept/composition
+      link: /concept/composition/concept
     - theme: alt
       text: Demo
       link: /api-examples
@@ -17,8 +17,8 @@ hero:
 features:
   - title: Khái niệm
     details: Trình bày khái niệm về Composition API
-  - title: Cú pháp
-    details: Các cú pháp để sử dụng các tính năng giống như Option API
+  - title: Hướng dẫn
+    details: Hướng dẫn sử dụng Composition API
   - title: Demo
     details: Các ví dụ demo
 ---

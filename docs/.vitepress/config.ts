@@ -18,7 +18,7 @@ export default withMermaid({
         items: [
           {
             text: 'Composition API',
-            link: '/concept/composition',
+            link: '/concept/composition/concept',
             items: [
               {
                 text: 'Tái sử dụng (Reusability)',
@@ -28,14 +28,18 @@ export default withMermaid({
                 text: 'Tổ chức mã nguồn',
                 link: '/concept/composition/organization'
               },
+              {
+                text: 'Typescript và chi phí',
+                link: '/concept/composition/type-and-cost'
+              },
             ]
           },
         ]
       },
       {
-        text: 'Cú pháp',
+        text: 'Hướng dẫn',
         items: [
-          {text: 'Markdown Examples', link: '/markdown-examples'},
+          {text: 'Vòng đời (Lifecycle)', link: '/guide/lifecycle'},
         ]
       }
     ],
