@@ -39,7 +39,20 @@ export default withMermaid({
       {
         text: 'Hướng dẫn',
         items: [
-          {text: 'Vòng đời (Lifecycle)', link: '/guide/lifecycle'},
+          {
+            text: 'Cơ bản',
+            link: '/guide/basic',
+            items: [
+              {
+                text: 'Composition API chuẩn',
+                link: '/guide/pure-composition-api'
+              },
+              {
+                text: 'Hybrid API',
+                link: '/guide/hybrid-api'
+              },
+            ]
+          },
         ]
       }
     ],

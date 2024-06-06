@@ -2,7 +2,7 @@
 outline: deep
 ---
 
-# Giới thiệu
+# Tổ chức mã nguồn
 Composition API sẽ hỗ trợ việc tổ chức mã nguồn linh hoạt hơn rất nhiều.
 
 ## Option API

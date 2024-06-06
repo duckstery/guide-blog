@@ -9,7 +9,7 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup>
 import useAlert from "./alert";
 import {ref} from "vue";
 

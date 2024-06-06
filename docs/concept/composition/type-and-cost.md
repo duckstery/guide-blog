@@ -2,7 +2,7 @@
 outline: deep
 ---
 
-# Giới thiệu
+# Hỗ trợ Typescript và giảm chi phí
 Composition API sẽ hỗ trợ tốt Typescript. Đồng thời giảm thiểu chi phí sản xuất.
 
 ## Typescript
