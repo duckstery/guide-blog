@@ -1,8 +1,9 @@
 ---
+title: Composition API chuẩn
 outline: deep
 ---
 
-# Sử dụng chuẩn Composition API 
+# Sử dụng `<script setup>`
 
 Đây là cách sử dụng Composition API chuẩn và được khuyến khích sử dụng trong các SFCs (Single-File Components).
 

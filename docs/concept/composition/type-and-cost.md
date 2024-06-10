@@ -1,4 +1,5 @@
 ---
+title: Tính chất của CompositionAPI
 outline: deep
 ---
 

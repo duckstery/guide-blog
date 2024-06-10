@@ -44,14 +44,32 @@ export default withMermaid({
             link: '/guide/basic',
             items: [
               {
-                text: 'Composition API chuẩn',
+                text: `&lt;script setup&gt;`,
                 link: '/guide/pure-composition-api'
               },
               {
-                text: 'Hybrid API',
+                text: 'setup()',
                 link: '/guide/hybrid-api'
               },
             ]
+          },
+          {
+            text: 'Data',
+            link: '/guide/data',
+            items: [
+              {
+                text: 'ref()',
+                link: '/guide/ref'
+              },
+              {
+                text: 'reactive()',
+                link: '/guide/reactive'
+              },
+            ]
+          },
+          {
+            text: 'Props và emits',
+            link: '/guide/props-emits',
           },
         ]
       }

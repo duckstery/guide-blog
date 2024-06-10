@@ -1,8 +1,9 @@
 ---
+title: Kết hợp giữa Option API và Composition API
 outline: deep
 ---
 
-# Hybrid API (Hỗn hợp)
+# Sử dụng `setup()`
 
 Có thể sử dụng hỗn hợp hai loại API với nhau thông qua hook `setup()`.
 :::warning CẢNH BÁO
@@ -13,9 +14,13 @@ Có thể sử dụng hỗn hợp hai loại API với nhau thông qua hook `set
 
 Đối với cách sử dụng này, phần `<template/>` và `<style/>` cũng sẽ không có sự khác biệt nào. Tuy nhiên, sẽ không thực hiện thêm attribute `setup` cho `<script/>`. Thay vào đó, sẽ sử dụng hook `setup()` trong Option API để sử dụng Composition API.
 
-<<< @/demo/hybrid-api/App.vue{5-8}
+<<< @/demo/hybrid-api/App.vue{5-12}
 
 Tất cả mã nguồn sử dụng Composition API sẽ được đặt trong `setup()`.
+
+:::info LƯU Ý
+Đối với data, computed hay method muốn sử dụng trong `template` thì buộc phải return khi sử dụng bên trong `setup()`.
+:::
 
 ## Mục đích
 

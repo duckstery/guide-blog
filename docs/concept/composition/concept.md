@@ -1,4 +1,5 @@
 ---
+title: Khái niệm Composition API
 outline: deep
 next:
   text: 'Tái sử dụng (Reusability)'
