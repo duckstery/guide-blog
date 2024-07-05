@@ -4,7 +4,7 @@ outline: deep
 ---
 
 # Data
-Data là tài nguyên cơ bản nhất của Vue và được định nghĩa bằng option `data` trong Option API. Phần này sẽ hướng dẫn chi tiết về việc định nghĩa data trong Composition API.
+Data là tài nguyên cơ bản nhất của Vue và được định nghĩa bằng option `data` trong Option API. Phần này sẽ hướng dẫn chi tiết về việc định nghĩa `data` trong Composition API.
 
 ## Giới thiệu
 

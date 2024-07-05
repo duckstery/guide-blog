@@ -1,9 +1,10 @@
-## API
+# ref
+
 ```ts
 function ref<T>(value: T): Ref<UnwrapRef<T>>
 ```
 
-Nhận một giá trị và trả về đối tượng ref có thuộc tính `.value` trỏ tới giá trị đã nhận.
+Nhận một giá trị khởi tạo và trả về đối tượng ref có thuộc tính `.value` trỏ tới giá trị đã nhận.
 
 ### Kiểu trả về
 ```ts

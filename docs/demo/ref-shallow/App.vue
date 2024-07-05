@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div>{{ deep }}</div>
+    <div>{{ shallow }}</div>
     <button @click="mutate">Click to mutate</button>
   </div>
 </template>
@@ -8,12 +8,12 @@
 <script setup>
 import {shallowRef} from "vue";
 
-const deep = shallowRef({a: 'foo'})
+const shallow = shallowRef({a: 'foo'})
 
 const mutate = () => {
-  if (deep.value.a === 'foo') deep.value.a = 'bar'
-  else deep.value.a = 'foo'
+  if (shallow.value.a === 'foo') shallow.value.a = 'bar'
+  else shallow.value.a = 'foo'
 
-  alert(JSON.stringify(deep.value))
+  alert(JSON.stringify(shallow.value))
 }
 </script>

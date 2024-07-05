@@ -12,7 +12,7 @@ Composition API sẽ hỗ trợ việc tổ chức mã nguồn linh hoạt hơn 
 Khi dự án càng phình to, một trang hay thậm chí một component sẽ chứa rất nhiều tính năng khác nhau. Mỗi tính năng sẽ cần một tổ hợp tài nguyên để có thể thực hiện được. Như vậy, với Option API, lập trình viên sẽ cần phân bổ tài nguyên của tính năng đó "khắp nơi".
 
 Giả sử, có một component quản lý thư mục ([xem mã nguồn file ở đây](https://github.com/vuejs/vue-cli/blob/a09407dd5b9f18ace7501ddb603b95e31d6d93c0/packages/@vue/cli-ui/src/components/folder/FolderExplorer.vue#L198-L404)). Component này sẽ có một số tính năng như sau:
-* <span style="background-color: #FAC6C7">&nbsp;&nbsp;&nbsp;</span> Theo dõi trạng thái thư mục hiện tại và hiển thị nội dung của nó
+* <span style="background-color: #FFCACB">&nbsp;&nbsp;&nbsp;</span> Theo dõi trạng thái thư mục hiện tại và hiển thị nội dung của nó
 * <span style="background-color: #D2CCFF">&nbsp;&nbsp;&nbsp;</span> Xử lý điều hướng thư mục (mở, đóng, làm mới, ...)
 * <span style="background-color: #FFC9F2">&nbsp;&nbsp;&nbsp;</span> Xử lý tạo thư mục mới
 * <span style="background-color: #FCE5C6">&nbsp;&nbsp;&nbsp;</span> Chỉ hiển thị các thư mục yêu thích
