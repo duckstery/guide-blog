@@ -69,7 +69,7 @@ Tuy nhiên, sẽ không cần phải sử dụng thông qua `.value` trong các 
 ## Deep reactivity
 
 `Ref` có thể được dùng cho bất kỳ kiểu dữ liệu gì, từ nguyên thủy cho tới `object`, `array` hay kể cả `Map`. Đồng
-thời, `Ref` sẽ làm cho dữ liệu của nó có tính phản ứng sâu (deep reactivity). Tức là Vue sẽ phát hiện được thay đổi khi
+thời, `Ref` sẽ làm cho dữ liệu của nó có deep reactivity. Tức là Vue sẽ phát hiện được thay đổi khi
 thay đổi `object` hay `array` có thuộc tính lồng nhiều tầng.
 
 ### Đối với `object`

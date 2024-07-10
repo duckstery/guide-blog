@@ -59,7 +59,7 @@ hoạt reactive.
 
 ## Deep reactivity
 
-Tương tự `Ref`, `Proxy` tạo bởi `reactive()` cũng có tính phản ứng sâu (deep reactivity). Thực tế, khi cung cấp
+Tương tự `Ref`, `Proxy` tạo bởi `reactive()` cũng có deep reactivity. Thực tế, khi cung cấp
 cho `ref()` dữ liệu không phải kiểu nguyên thủy, `ref()` sẽ sử dụng `reactive()` để tạo ra `Proxy` cho dữ liệu đó. Sau
 đó, nó sẽ gói `Proxy` bằng `Ref`. Tức là giá trị trả về sẽ là một đối tượng `Ref` có `.value` là một `Proxy`.
 
