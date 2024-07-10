@@ -65,7 +65,23 @@ export default withMermaid({
                 text: 'reactive()',
                 link: '/guide/reactive'
               },
+              {
+                text: 'Nâng cao',
+                link: '/guide/data-advance'
+              }
             ]
+          },
+          {
+            text: 'Computed properties',
+            link: '/guide/computed',
+          },
+          {
+            text: 'Watchers',
+            link: '/guide/watch',
+          },
+          {
+            text: 'Methods',
+            link: '/guide/method',
           },
           {
             text: 'Props và emits',
