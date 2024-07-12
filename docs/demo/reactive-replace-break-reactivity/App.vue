@@ -21,7 +21,7 @@ const increaseCount = () => state.count++
 // (reactivity connection is lost!)
 const changeState = () => {
   state = reactive({count: 1}) // [!code highlight]
-  alert(state)
+  alert(JSON.stringify(state))
 }
 
 const reset = () => {

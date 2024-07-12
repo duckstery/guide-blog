@@ -44,7 +44,8 @@ flowchart LR
 Dưới đây là ví dụ mở rộng cho việc truy cập và thay đổi giá trị của reactive data (state):
 
 ::: code-group
-<<< @/demo/reactive-interaction/App.vue
+<<< @/demo/reactive-interaction/App.vue [&lt;script setup&gt;]
+<<< @/demo/reactive-interaction/Setup.vue [setup()]
 :::
 
 <DemoBlock>
@@ -99,7 +100,8 @@ const obj = {
 Nếu thay đổi `name` hoặc `detail` thì sẽ reactive. Tuy nhiên nếu thay đổi `detail.color` thì sẽ không reactive. Xem thêm ví dụ minh họa bên dưới:
 
 ::: code-group
-<<< @/demo/reactive-shallow/App.vue
+<<< @/demo/reactive-shallow/App.vue [&lt;script setup&gt;]
+<<< @/demo/reactive-shallow/Setup.vue [setup()]
 :::
 
 <DemoBlock>

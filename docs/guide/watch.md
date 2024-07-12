@@ -16,7 +16,8 @@ Watcher được định nghĩa bằng option `watch` trong Option API. Phần n
 Khi truyền một `reactive` cho `watch()` thì mặc định sẽ ngầm tạo ra một deep watcher. Tức là chỉ cần thay đổi bất kỳ property nào thì watcher này cũng sẽ kích hoạt.
 
 ::: code-group
-<<< @/demo/watch-deep/App.vue
+<<< @/demo/watch-deep/App.vue [&lt;script setup&gt;]
+<<< @/demo/watch-deep/Setup.vue [setup()]
 :::
 
 <DemoBlock>
@@ -30,7 +31,8 @@ Ngoài trường hợp trên, `watch()` sẽ tạo ra một watch bình thườn
 Ngoài việc cung cấp một `ref()` hay `reactive()` cho `watch()`, còn có thể cung cấp một getter. Getter này sẽ trả về một property của `ref()` hoặc `reactive()`. Điều này cho phép có thể watch một property bất kỳ thay vì phải watch cả object.
 
 ::: code-group
-<<< @/demo/watch-getter-return-primitive/App.vue
+<<< @/demo/watch-getter-return-primitive/App.vue [&lt;script setup&gt;]
+<<< @/demo/watch-getter-return-primitive/Setup.vue [setup()]
 :::
 
 <DemoBlock>
@@ -40,7 +42,8 @@ Ngoài việc cung cấp một `ref()` hay `reactive()` cho `watch()`, còn có 
 Nếu getter trả về một property có kiểu object, thì chỉ khi thay thế một object mới thì watcher mới được kích hoạt.
 
 ::: code-group
-<<< @/demo/watch-getter-return-object/App.vue
+<<< @/demo/watch-getter-return-object/App.vue [&lt;script setup&gt;]
+<<< @/demo/watch-getter-return-object/Setup.vue [setup()]
 :::
 
 <DemoBlock>
@@ -98,5 +101,5 @@ Dưới đây là một ví dụ về việc sử dụng `watchEffect()` để t
 import {default as WatchDeep} from "../demo/watch-deep/App.vue";
 import {default as WatchGetterReturnPrimitive} from "../demo/watch-getter-return-primitive/App.vue";
 import {default as WatchGetterReturnObject} from "../demo/watch-getter-return-object/App.vue";
-import {default as WatchEffectBasic} from "../demo/watch-effect-basic/App.vue";
+import {default as WatchEffectBasic} from "../demo/watch-effect-basic/Setup.vue";
 </script>

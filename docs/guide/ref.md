@@ -42,7 +42,8 @@ flowchart LR
 Dưới đây là ví dụ mở rộng cho việc truy cập và thay đổi giá trị của reactive data (state):
 
 ::: code-group
-<<< @/demo/ref-interaction/App.vue
+<<< @/demo/ref-interaction/App.vue [&lt;script setup&gt;]
+<<< @/demo/ref-interaction/Setup.vue [setup()]
 :::
 
 <DemoBlock>
@@ -92,7 +93,8 @@ vm.b = 2
 Tuy nhiên ở Vue 3, sẽ không cần sử dụng bất kỳ một helper nào. Hãy xem ví dụ bên dưới:
 
 ::: code-group
-<<< @/demo/ref-deep-object/App.vue
+<<< @/demo/ref-deep-object/App.vue [&lt;script setup&gt;]
+<<< @/demo/ref-deep-object/Setup.vue [setup()]
 :::
 
 <DemoBlock>
@@ -121,7 +123,8 @@ vm.items.length = newLength
 sẽ không cần sử dụng các hàm đã đề cập mà có thể truy cập trực tiếp như ví dụ sau:
 
 ::: code-group
-<<< @/demo/ref-deep-array/App.vue
+<<< @/demo/ref-deep-array/App.vue [&lt;script setup&gt;]
+<<< @/demo/ref-deep-array/Setup.vue [setup()]
 :::
 
 <DemoBlock>
@@ -143,7 +146,8 @@ Thay vào đó, hàm sẽ chỉ trả về một Ref chỉ có tính reactive t�
 reactive mới xảy ra. Xem thêm ví dụ bên dưới:
 
 ::: code-group
-<<< @/demo/ref-shallow/App.vue
+<<< @/demo/ref-shallow/App.vue [&lt;script setup&gt;]
+<<< @/demo/ref-shallow/Setup.vue [setup()]
 :::
 
 <DemoBlock>
@@ -154,5 +158,5 @@ reactive mới xảy ra. Xem thêm ví dụ bên dưới:
 import {default as RefInteraction} from "../demo/ref-interaction/App.vue";
 import {default as RefDeepObject} from "../demo/ref-deep-object/App.vue";
 import {default as RefDeepArray} from "../demo/ref-deep-array/App.vue";
-import {default as RefShallow} from "../demo/ref-shallow/App.vue";
+import {default as RefShallow} from "../demo/ref-shallow/Setup.vue";
 </script>

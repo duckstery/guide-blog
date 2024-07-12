@@ -19,7 +19,7 @@ Có thể sử dụng hỗn hợp hai loại API với nhau thông qua hook `set
 Tất cả mã nguồn sử dụng Composition API sẽ được đặt trong `setup()`.
 
 :::info LƯU Ý
-Đối với data, computed hay method muốn sử dụng trong `template` thì buộc phải return khi sử dụng bên trong `setup()`.
+Đối với `data`, `computed` hay `method` muốn sử dụng trong `template` thì buộc phải return khi sử dụng bên trong `setup()`.
 :::
 
 ## Mục đích

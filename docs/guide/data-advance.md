@@ -24,7 +24,8 @@ Một số vấn đề của `reactive()` có thể kể đến như sau:
 `Proxy` chỉ reactive khi thực hiện thay đổi thuộc tính. Vì thế giả sử cần gán biến bằng một đối tượng khác, cần thực hiện thay đổi từng thuộc tính một. Ví dụ, nếu thực hiện code như bên dưới thì sẽ bị mất tính phản ứng:
 
 ::: code-group
-<<< @/demo/reactive-replace-break-reactivity/App.vue
+<<< @/demo/reactive-replace-break-reactivity/App.vue [&lt;script setup&gt;]
+<<< @/demo/reactive-replace-break-reactivity/Setup.vue [setup()]
 :::
 
 <DemoBlock>
@@ -40,7 +41,8 @@ Ngoài ra, việc sử dụng `Proxy` cho `v-model` cũng sẽ gây ra tình tr�
 Đối với `Ref`, do sử dụng thông qua `.value` nên có thể dễ dàng thay thế một đối tượng mới. Và do mặc định nếu truyền `Ref` vào `v-model`, Vue sẽ hiểu là làm việc thông qua `.value` nên cũng sẽ không gây ra tình trạng mất tính phản ứng. Hãy xem lại ví dụ bên trên nhưng thực hiện bằng `ref()`:
 
 ::: code-group
-<<< @/demo/ref-replace-keep-reactivity/App.vue
+<<< @/demo/ref-replace-keep-reactivity/App.vue [&lt;script setup&gt;]
+<<< @/demo/ref-replace-keep-reactivity/Setup.vue [setup()]
 :::
 
 <DemoBlock>
@@ -53,7 +55,8 @@ Ngoài ra, việc sử dụng `Proxy` cho `v-model` cũng sẽ gây ra tình tr�
 Khi thực hiện destructure thuộc tính có kiểu nguyên thủy của một reactive object (hay chỉ truyền thuộc tính đó vào một hàm) sẽ làm mất tính phản ứng. Ví dụ như đoạn code bên dưới:
 
 ::: code-group
-<<< @/demo/reactive-destructuring-break-reactivity/App.vue
+<<< @/demo/reactive-destructuring-break-reactivity/App.vue [&lt;script setup&gt;]
+<<< @/demo/reactive-destructuring-break-reactivity/Setup.vue [setup()]
 :::
 
 <DemoBlock>
@@ -72,7 +75,9 @@ Khi một `Ref` bị unwrap thì sẽ không còn và không cần phải truy c
 
 `Ref` sẽ tự động bị unwrap khi bị truy cập hoặc điều chỉnh khi đang là một thuộc tính của `reactive()`. Xem thêm ở ví dụ bên dưới
 ::: code-group
-<<< @/demo/ref-unwrap/App.vue
+<<< @/demo/ref-unwrap/App.vue [&lt;script setup&gt;]
+<<< @/demo/ref-unwrap/Setup.vue [setup()]
+:::
 :::
 
 <DemoBlock>

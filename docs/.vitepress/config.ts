@@ -84,8 +84,8 @@ export default withMermaid({
             link: '/guide/method',
           },
           {
-            text: 'Props và emits',
-            link: '/guide/props-emits',
+            text: 'Props',
+            link: '/guide/props',
           },
         ]
       }
