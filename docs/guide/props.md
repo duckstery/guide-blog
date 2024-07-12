@@ -49,7 +49,7 @@ Hàm `defineProps()` sẽ trả về một đối tượng chính là props củ
 :::
 
 <DemoBlock>
-<PropsBasicComposition/>
+<PropsBasicHybrid/>
 </DemoBlock>
 
 <script setup>

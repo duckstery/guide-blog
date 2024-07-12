@@ -87,6 +87,14 @@ export default withMermaid({
             text: 'Props',
             link: '/guide/props',
           },
+          {
+            text: 'Emit',
+            link: '/guide/emit',
+          },
+          {
+            text: '$attrs và $slots',
+            link: '/guide/attrs-and-slots',
+          },
         ]
       }
     ],

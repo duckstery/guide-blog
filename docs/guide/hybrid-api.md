@@ -22,6 +22,30 @@ Tất cả mã nguồn sử dụng Composition API sẽ được đặt trong `s
 Đối với `data`, `computed` hay `method` muốn sử dụng trong `template` thì buộc phải return khi sử dụng bên trong `setup()`.
 :::
 
+Hàm `setup()` sẽ được Vue cung cấp hai tham số là `props` và `context`. `props` là các thuộc tính tường minh của component. `context` (hay [Setup context](https://vuejs.org/api/composition-api-setup.html#setup-context)) sẽ bao gồm một số tài nguyên sau:
+* `attrs`: Tương đương với `this.$attrs` trong Option API
+* `slots`: Tương đương với `this.$slots` trong Option API
+* `emit`: Tương đương với `this.$emits` trong Option API
+* `expose`: Hàm để expose tài nguyên ở Vue 3
+
+```js
+export default {
+  setup(props, context) {
+    // Attributes (Non-reactive object, equivalent to $attrs)
+    console.log(context.attrs)
+
+    // Slots (Non-reactive object, equivalent to $slots)
+    console.log(context.slots)
+
+    // Emit events (Function, equivalent to $emit)
+    console.log(context.emit)
+
+    // Expose public properties (Function)
+    console.log(context.expose)
+  }
+}
+```
+
 ## Mục đích
 
 Việc xuất hiện Composition API không yêu cầu các project cũ phải thực hiện thích nghi và chuyển đổi. Tuy nhiên, những project mới sẽ sử dụng Composition API và có thể (hoặc không) hỗ trợ cú pháp cho Option API nữa. Vậy nên, có thể sử dụng cách này để tạm thời hỗ trợ Composition API cho các component Option API.
