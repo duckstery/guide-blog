@@ -2,7 +2,7 @@
   <div>
     <div>
       <div>{{ message }}</div>
-      <label>Nhập nội dung:</label>
+      <label>Message:</label>
       <input v-model="message" placeholder="Nhập message"/>
     </div>
     <button @click="show">Alert user</button>

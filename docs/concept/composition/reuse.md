@@ -7,9 +7,7 @@ outline: deep
 Composition API sẽ cải thiện khả năng tái sử dụng của Vue 3 và thay thế mixin ở Vue 2.
 
 ## Option API và mixin
-Tại Vue 2, có thể sử dụng `mixin` nhằm tái sử dụng chức năng trong component. Giả sử, chúng ta có chức năng hiển thị alert để thông báo user cái gì đó.
-
-Dưới đây là một ví dụ nhỏ, `mixin` sau sẽ có thể thực hiện alert user thông qua hàm `show()`.
+Tại Vue 2, có thể sử dụng `mixin` nhằm tái sử dụng chức năng trong component. Dưới đây là một ví dụ nhỏ, `mixin` sau sẽ có thể thực hiện alert user thông qua hàm `show()`.
 
 ::: code-group
 <<< @/demo/using-mixin/alert.js
@@ -74,7 +72,7 @@ Dưới đây sẽ là demo cho việc chuyển đổi qua sử dụng `composab
 
 Ở demo trên, Composition API đã giải quyết được vấn đề xung đột tên tài nguyên. Có thể tùy ý thay đổi tên tài nguyên trả về của `composable` tại vị trí sử dụng. Còn đối với `mixin`, có thể đổi tên ở hai vị trí sau:
 * Bên trong `mixin`: Không quá phù hợp nếu `mixin` thuộc về bên thứ 3 hoặc với số lượng `mixin` rất lớn, phải yêu cầu lập trình viên kiểm tra thủ công xem có trùng tên với `mixin` hoặc component khác không.
-* Thay đổi tên tài nguyên gây xung đột tại component: Cách này phù hợp các trên, tuy nhiên vẫn gây trở ngại do buộc phải thay đổi tên tài nguyên của component cho dù có phù hợp ngữ cảnh.
+* Thay đổi tên tài nguyên gây xung đột tại component: Cách này phù hợp, tuy nhiên vẫn gây trở ngại do buộc phải thay đổi tên tài nguyên của component cho dù có phù hợp ngữ cảnh.
 
 ::: info THÔNG TIN
 Composable cho phép tối đa hóa sự linh hoạt trong việc đặt tên tài nguyên.

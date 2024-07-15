@@ -1,8 +1,7 @@
 <template>
   <div>
     <div>
-      <div>Hãy nhập nội dung vào input và nhấn nút</div>
-      <label>Nhập nội dung:</label>
+      <label>Message:</label>
       <input v-model="message" placeholder="Nhập message"/>
     </div>
     <button @click="show">Alert user</button>

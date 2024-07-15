@@ -20,8 +20,8 @@ Ví dụ về Option API
 <OptionApiExample/>
 </DemoBlock>
 
-Theo như Vue, Composition API sinh ra để giải quyết một số bài toán như sau"
-* Cải tiến khá năng tái sử dụng
+Theo như Vue, Composition API sinh ra để giải quyết một số bài toán như sau
+* Cải tiến khả năng tái sử dụng
 * Cải tiến khả năng tổ chức code
 * Hỗ trợ type (Typescript)
 * Giảm thiếu dung lượng và chi phí của sản phẩm
