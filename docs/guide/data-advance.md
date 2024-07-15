@@ -78,7 +78,6 @@ Khi một `Ref` bị unwrap thì sẽ không còn và không cần phải truy c
 <<< @/demo/ref-unwrap/App.vue [&lt;script setup&gt;]
 <<< @/demo/ref-unwrap/Setup.vue [setup()]
 :::
-:::
 
 <DemoBlock>
 <RefUnwrap/>
