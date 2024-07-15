@@ -9,7 +9,7 @@ export default withMermaid({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       {text: 'Trang chủ', link: '/'},
-      {text: 'Demo', link: '/markdown-examples'}
+      // {text: 'Demo', link: '/markdown-examples'}
     ],
 
     sidebar: [
