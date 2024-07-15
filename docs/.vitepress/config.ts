@@ -5,6 +5,7 @@ export default withMermaid({
   title: "Composition API",
   description: "Guide for Vue 3 Composition API",
   outDir: '../docs',
+  base: '/guide-blog/',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
