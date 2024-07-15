@@ -10,9 +10,9 @@ hero:
     - theme: brand
       text: Bắt đầu
       link: /concept/composition/concept
-    - theme: alt
-      text: Demo
-      link: /api-examples
+#    - theme: alt
+#      text: Demo
+#      link: /api-examples
 
 features:
   - title: Khái niệm
