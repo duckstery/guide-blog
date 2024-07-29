@@ -16,6 +16,7 @@ Watcher được định nghĩa bằng option `watch` trong Option API. Phần n
 Khi truyền một `reactive` cho `watch()` thì mặc định sẽ ngầm tạo ra một deep watcher. Tức là chỉ cần thay đổi bất kỳ property nào thì watcher này cũng sẽ kích hoạt.
 
 ::: code-group
+<<< @/demo/watch-deep/Option.vue [Option API]
 <<< @/demo/watch-deep/App.vue [&lt;script setup&gt;]
 <<< @/demo/watch-deep/Setup.vue [setup()]
 :::
@@ -31,6 +32,7 @@ Ngoài trường hợp trên, `watch()` sẽ tạo ra một watch bình thườn
 Ngoài việc cung cấp một `ref()` hay `reactive()` cho `watch()`, còn có thể cung cấp một getter. Getter này sẽ trả về một property của `ref()` hoặc `reactive()`. Điều này cho phép có thể watch một property bất kỳ thay vì phải watch cả object.
 
 ::: code-group
+<<< @/demo/watch-getter-return-primitive/Option.vue [Option API]
 <<< @/demo/watch-getter-return-primitive/App.vue [&lt;script setup&gt;]
 <<< @/demo/watch-getter-return-primitive/Setup.vue [setup()]
 :::
@@ -42,6 +44,7 @@ Ngoài việc cung cấp một `ref()` hay `reactive()` cho `watch()`, còn có 
 Nếu getter trả về một property có kiểu object, thì chỉ khi thay thế một object mới thì watcher mới được kích hoạt.
 
 ::: code-group
+<<< @/demo/watch-getter-return-object/Option.vue [Option API]
 <<< @/demo/watch-getter-return-object/App.vue [&lt;script setup&gt;]
 <<< @/demo/watch-getter-return-object/Setup.vue [setup()]
 :::
